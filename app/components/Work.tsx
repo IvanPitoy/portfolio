@@ -4,38 +4,39 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 type Project = { id: string; videoUrl: string; description: string };
 type Category = { eyebrow: string; title: string; description: string; projects: Project[] };
 
-const CATEGORIES: Category[] = [
+const CATEGORIES: { eyebrow: string; title: string; description: string; projects: Project[] }[] = [
   { eyebrow:"Category 01", title:"Talking Heads + Motion", description:"Interview and talking-head edits with dynamic captions.",
     projects:[
-      { id:"th-1", videoUrl:"/videos/real-state.mp4",        description:"Talking-head editing with captions." },
-      { id:"th-2", videoUrl:"/videos/talking-head.mp4",      description:"Talking-head editing with captions." },
-      { id:"th-3", videoUrl:"/videos/motion-graphics-7.mp4", description:"Talking-head editing with captions." },
+      { id:"th-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Real%20State.mp4", description:"Talking-head editing with captions." },
+      { id:"th-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Talking%20Head%20w%20MG.mp4", description:"Talking-head editing with captions." },
+      { id:"th-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%207.mp4", description:"Talking-head editing with captions." },
     ]},
   { eyebrow:"Category 02", title:"Brand Ads", description:"Commercial and brand content crafted to convert viewers into customers.",
     projects:[
-      { id:"ba-1", videoUrl:"/videos/brand-ad-1.mp4", description:"Placeholder — replace with your brand ad." },
-      { id:"ba-2", videoUrl:"/videos/brand-ad-2.mp4", description:"Placeholder — replace with your brand ad." },
-      { id:"ba-3", videoUrl:"/videos/brand-ad-3.mp4", description:"Placeholder — replace with your brand ad." },
+      { id:"ba-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Campaign%20Ad%20Day%201.mp4", description:"Brand ad campaign." },
+      { id:"ba-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Cinematic%20Transition%20and%20Reverse.mp4", description:"Cinematic brand transitions." },
+      { id:"ba-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Carwash.mp4", description:"Brand commercial edit." },
     ]},
   { eyebrow:"Category 03", title:"Motion Graphics", description:"Kinetic type, animated overlays, and brand motion packages.",
     projects:[
-      { id:"mg-1", videoUrl:"/videos/motion-graphics-5.mp4", description:"Animated graphics and transitions." },
-      { id:"mg-2", videoUrl:"/videos/motion-graphics-4.mp4", description:"Kinetic text and animated overlays." },
-      { id:"mg-3", videoUrl:"/videos/motion-graphics-6.mp4", description:"Brand motion package." },
+      { id:"mg-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%205.mp4", description:"Animated graphics and transitions." },
+      { id:"mg-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%204.mp4", description:"Kinetic text and animated overlays." },
+      { id:"mg-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%206.mp4", description:"Brand motion package." },
     ]},
   { eyebrow:"Category 04", title:"3D Motion Graphics", description:"Sci-fi motion design and animated HUD compositions.",
     projects:[
-      { id:"sf-1", videoUrl:"/videos/motion-graphics-1.mp4", description:"High-retention short-form edit." },
-      { id:"sf-2", videoUrl:"/videos/motion-graphics-2.mp4", description:"Social media short-form content." },
-      { id:"sf-3", videoUrl:"/videos/motion-graphics-3.mp4", description:"Social media short-form content." },
+      { id:"sf-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%201.mp4", description:"High-retention short-form edit." },
+      { id:"sf-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%202.mp4", description:"Social media short-form content." },
+      { id:"sf-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%203.mp4", description:"Social media short-form content." },
     ]},
   { eyebrow:"Category 05", title:"Gaming Edits", description:"High-energy gaming content built for YouTube and short-form platforms.",
     projects:[
-      { id:"ge-1", videoUrl:"/videos/gaming-1.mp4", description:"Placeholder — replace with your gaming edit." },
-      { id:"ge-2", videoUrl:"/videos/gaming-2.mp4", description:"Placeholder — replace with your gaming edit." },
-      { id:"ge-3", videoUrl:"/videos/gaming-3.mp4", description:"Placeholder — replace with your gaming edit." },
+      { id:"ge-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-1.mp4", description:"Gaming highlight edit." },
+      { id:"ge-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-2.mp4", description:"High-energy gaming montage." },
+      { id:"ge-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-3.mp4", description:"Gaming content edit." },
     ]},
 ];
+
 
 const BA_VIDEO_URL = "/videos/before-after.mp4";
 
