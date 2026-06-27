@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Name — Video Editor",
+  title: "KIV — Video Editor Portfolio",
   description: "Talking heads, motion graphics, and visual storytelling. Available for projects.",
 };
 
