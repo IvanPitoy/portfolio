@@ -38,7 +38,7 @@ const CATEGORIES: { eyebrow: string; title: string; description: string; project
 ];
 
 
-const BA_VIDEO_URL = "/videos/before-after.mp4";
+const BA_VIDEO_URL = "https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Sample%20Comparison.mp4";
 
 const g   = (a: number) => `rgba(200,169,110,${a})`;
 const fmt = (s: number) => isNaN(s) ? "0:00" : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,"0")}`;
