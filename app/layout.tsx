@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "KIV — Video Editor Portfolio",
-  description: "Talking heads, motion graphics, and visual storytelling. Available for projects.",
+  description: "Crafting engaging videos through thoughtful editing, motion design, and visual storytelling for creators, brands, and businesses.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
