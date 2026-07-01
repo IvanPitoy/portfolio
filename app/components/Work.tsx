@@ -9,7 +9,7 @@ const CATEGORIES: { eyebrow: string; title: string; description: string; project
     projects:[
       { id:"th-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943092/Real_State_sgln7s.mp4", description:"Talking-head edits with captions and motion graphics." },
       { id:"th-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943094/Talking_Head_W_Mg_ikqgf9.mp4", description:"Talking-head edits with captions and motion graphics." },
-      { id:"th-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Talking_Heads_ebktso.mp4", description:"Talking-head edits with captions and motion graphics." },
+      { id:"th-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Talking_Heads_ebktso.mp4", description:"Talking-head edits with captions with B-rolls." },
     ]},
   { eyebrow:"Category 02", title:"Motion Graphics", description:"Kinetic type, animated overlays, and brand motion packages.",
     projects:[
