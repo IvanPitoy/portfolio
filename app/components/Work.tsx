@@ -7,38 +7,38 @@ type Category = { eyebrow: string; title: string; description: string; projects:
 const CATEGORIES: { eyebrow: string; title: string; description: string; projects: Project[] }[] = [
   { eyebrow:"Category 01", title:"Talking Heads + Motion", description:"Interview and talking-head edits with dynamic captions.",
     projects:[
-      { id:"th-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Real%20State.mp4", description:"Talking-head edits with captions and motion graphics." },
-      { id:"th-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Talking%20Head%20w%20MG.mp4", description:"Talking-head edits with captions and motion graphics." },
-      { id:"th-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%207.mp4", description:"Talking-head edits with captions and motion graphics." },
+      { id:"th-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943092/Real_State_sgln7s.mp4", description:"Talking-head edits with captions and motion graphics." },
+      { id:"th-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943094/Talking_Head_W_Mg_ikqgf9.mp4", description:"Talking-head edits with captions and motion graphics." },
+      { id:"th-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Talking_Heads_ebktso.mp4", description:"Talking-head edits with captions and motion graphics." },
     ]},
-  { eyebrow:"Category 02", title:"Brand Ads", description:"Commercial and brand content crafted to convert viewers into customers.",
+  { eyebrow:"Category 02", title:"Motion Graphics", description:"Kinetic type, animated overlays, and brand motion packages.",
     projects:[
-      { id:"ba-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Campaign%20Ad%20Day%201.mp4", description:"Brand promotional edits." },
-      { id:"ba-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Cinematic%20Transition%20and%20Reverse.mp4", description:"Brand promotional edits." },
-      { id:"ba-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Carwash.mp4", description:"Brand promotional edits." },
+      { id:"mg-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943095/Motion_Graphics_5_kjgkke.mp4", description:"Kinetic typography and motion design." },
+      { id:"mg-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943096/Motion_Graphics_4_uzwie7.mp4", description:"Kinetic typography and motion design." },
+      { id:"mg-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943096/Motion_Graphics_6_vujlpt.mp4", description:"Kinetic typography and motion design." },
     ]},
-  { eyebrow:"Category 03", title:"Motion Graphics", description:"Kinetic type, animated overlays, and brand motion packages.",
+  { eyebrow:"Category 03", title:"Brand Ads", description:"Commercial and brand content crafted to convert viewers into customers.",
     projects:[
-      { id:"mg-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%205.mp4", description:"Kinetic typography and motion design." },
-      { id:"mg-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%204.mp4", description:"Kinetic typography and motion design." },
-      { id:"mg-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%206.mp4", description:"Kinetic typography and motion design." },
+      { id:"ba-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943094/Promo_Ad_2_brcjwv.mp4", description:"Brand promotional edits." },
+      { id:"ba-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Campaign_Ad_Day_1_r40npi.mp4", description:"Brand promotional edits." },
+      { id:"ba-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Cinematic_Transition_And_Reverse_qvxfvm.mp4", description:"Brand promotional edits." },
     ]},
   { eyebrow:"Category 04", title:"3D Motion Graphics", description:"Sci-fi motion design and animated HUD compositions.",
     projects:[
-      { id:"sf-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%201.mp4", description:"3D motion design." },
-      { id:"sf-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%202.mp4", description:"3D motion design." },
-      { id:"sf-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Motion%20Graphics%203.mp4", description:"3D motion design." },
+      { id:"sf-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943091/Motion_Graphics_1_g68bp5.mp4", description:"3D motion design." },
+      { id:"sf-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943097/Motion_Graphics_2_oapflj.mp4", description:"3D motion design." },
+      { id:"sf-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943096/Motion_Graphics_3_y8w67r.mp4", description:"3D motion design." },
     ]},
   { eyebrow:"Category 05", title:"Gaming Edits", description:"High-energy gaming content built for YouTube and short-form platforms.",
     projects:[
-      { id:"ge-1", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-1.mp4", description:"Gaming highlight edit." },
-      { id:"ge-2", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-2.mp4", description:"High-energy gaming montage." },
-      { id:"ge-3", videoUrl:"https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/gaming-3.mp4", description:"Gaming content edit." },
+      { id:"ge-1", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943096/Content_7_qguxl3.mp4", description:"Gaming content edit." },
+      { id:"ge-2", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943097/First_Valo_Edit_abyj6v.mp4", description:"Gaming highlight edit." },
+      { id:"ge-3", videoUrl:"https://res.cloudinary.com/djx1orgmd/video/upload/v1782943095/0515_1_q4ndma.mp4", description:"High-energy gaming montage." },
     ]},
 ];
 
 
-const BA_VIDEO_URL = "https://jndzkekmerk3cjeq.public.blob.vercel-storage.com/Sample%20Comparison.mp4";
+const BA_VIDEO_URL = "https://res.cloudinary.com/djx1orgmd/video/upload/v1782943456/Sample_Comparison_glxzro.mp4";
 
 const g   = (a: number) => `rgba(200,169,110,${a})`;
 const fmt = (s: number) => isNaN(s) ? "0:00" : `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,"0")}`;
